@@ -1,0 +1,106 @@
+*{
+    margin : 0,
+     padding : 0,
+    box-sizing : border-box
+}
+.parag{background-color: gray;
+border: 15px solid green;
+margin: 20px;
+padding: 50px;
+width: 250px;
+ height: 250px ;
+}
+
+.box-4 {
+    background-color: white;
+    width: 300px;
+    border: 2px solid black;
+}
+.box-3 {
+    background-color: white;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 20px;
+}
+
+.box-2 {  background-color: gray;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 20px;
+}
+.box-1 {background-color: white;
+    border: 2px dashed black;
+    display: inline-block;
+    padding: 20px;
+    margin: 200px;
+    
+}
+
+
+
+.cont-1 {
+    border: 2px solid purple;
+   width: 1000px;
+   padding: 15px;
+
+}
+.cont-2 {
+    border: 2px solid purple;
+   width: 1000px;
+   padding: 15px;
+  margin-top: 20px;
+
+}
+span {
+    border: 2px solid blue;
+    display: inline-block;
+padding: 30px;
+}
+
+.cont-3 { border: 2px solid purple;
+    width: 1000px;
+    padding: 15px;
+    margin-top: 20px;
+
+}
+
+.div-1 { 
+    border: 2px solid blue;
+     padding: 15px;
+}
+
+/* 4 task */
+
+.abc-3 {
+    background-color: gray;
+    width: 1000px;
+    height: 250px;
+background-image: url('https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+background-size: cover;
+background-position: center;
+
+background-repeat: no-repeat;
+
+
+
+
+}
+
+.abc-2 {
+   background-color:ghostwhite;
+    width: 1000px;
+    height: 150px;
+    margin-top: -22px;
+}
+.button {
+    background-color: blue;
+    color: white;
+    width: 100px;;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.title{
+    padding: 10p;
+}

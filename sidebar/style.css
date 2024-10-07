@@ -1,0 +1,38 @@
+
+
+*{
+    margin : 0px;
+   padding: 0px;
+    box-sizing : border-box
+}
+
+main{ height: 200vh;}
+
+
+
+
+.nav{
+    background-color: black;
+display: inline-block;
+width: 270px;
+height: 200vh;
+position: fixed;
+}
+
+
+h1{font-size: 50px;
+    padding-left: 300px;
+    }
+    p{font-size: 30px;
+    padding-left: 300px;
+    
+    }
+
+.a:hover {color: white;}
+
+  .a{color: rgb(141, 138, 138);
+ padding: 10px;
+ font-size: 50px;
+ text-decoration: none;
+
+}
