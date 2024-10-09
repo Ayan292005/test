@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+
+
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+header {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0 2px 5px rgb(199, 198, 198);
+    z-index: 3;
+
+}
+
+
+#hero {
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero {
+    position: relative;
+   
+
+}
+.hero img {
+    width: 100%;
+}
+
+.hero-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text>p {
+
+    background-color: black;
+    opacity: 0.8;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.btn>button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+}
+
+.btn-2>button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 20px;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.project {
+   
+    display: flex;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+
+.images {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+   
+    z-index: 2;
+}
+
+.images img {
+    
+        width: 100%; 
+        height: auto; 
+
+}
+
+.image{
+    position: relative;
+    width: 360px; 
+
+
+}
+   
+
+
+
+.inscription{
+    color: white;
+   background-color: black;
+   padding: 10px;
+   font-size: 20px;
+   position: absolute;
+   top: 0;
+  left: 0;
+   
+}
+
+.btn-2>button>span {
+    font-weight: bold;
+}
+
+
+.about {
+ 
+    display: flex;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.about-text {
+  
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.card img {
+
+    width: 100%;
+}
+
+.info>button {
+    border: none;
+    padding: 10px;
+}
+
+.contact {
+    display: flex;
+    font-size: 30px;
+  
+    margin-top: 80px;
+}
+
+.contacts {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+input {
+    padding: 10px;
+}
+
+.btn-3 {
+    color: white;
+    background-color: black;
+    width: 180px;
+    padding: 10px;
+    border: none;
+}
+
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+footer>p {
+    color: white;
+    font-size: 20px;
+}
+
+.a {
+    color: white;
+}
+
+.map {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

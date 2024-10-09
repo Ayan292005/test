@@ -1,0 +1,29 @@
+@media (min-width: 576px) and (max-width: 1200px) {
+
+ .container .card{
+    width: 48%;
+   
+}
+    .cards{
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+@media (max-width: 576px) {
+
+    .list{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+      
+}
+.card{
+    width: 100%;
+
+}
+.hero-info{
+    width: 90%;
+}
+}
