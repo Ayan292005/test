@@ -1,43 +1,64 @@
-@media (min-width: 576px) and (max-width: 943px) {
-    
-    .images {
-        background-color: aqua;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        gap: 20px;
-       
-        z-index: 2;
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .image {
+
+        width: 47%;
+
+
+    }
+
+    .card {
+        width: 48%;
     }
 }
 
 @media (max-width: 576px) {
-    
-    .btn{
+
+    .btn {
         display: none;
     }
-    .nav-menu{
+
+    .nav-menu {
         display: flex;
-    }
-    .images {
-        background-color: aqua;
-        display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
-        gap: 20px;
-       
-        z-index: 2;
+        font-size: 20px;
     }
-    
+
+    .image {
+
+        width: 100%;
+
+
+    }
+
+    .card {
+        width: 100%;
+    }
 
 }
-
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
+    .image {
+
+        width: 47%;
+
+
+    }
     
-
+    .card {
+        width: 48%;
+    }
 }
-@media (min-width: 1200px) and (max-width: 1600px) {
+
+@media (min-width: 1200px) and (max-width: 1400px) {
 
 
+    .image {
+
+        width: 31%;
+
+
+    }
 }
