@@ -137,9 +137,10 @@ button {
    padding: 10px;
    font-size: 20px;
    position: absolute;
+ 
    top: 0;
   left: 0;
-   
+
 }
 
 .btn-2>button>span {
