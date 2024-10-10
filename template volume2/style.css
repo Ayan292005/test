@@ -6,14 +6,19 @@
 
 
 body {
-    background-color: lightgray;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container {
+
     width: 80%;
     margin: 0 auto;
-
 }
+
 .head {
 
     display: flex;
@@ -25,99 +30,212 @@ body {
     gap: 15px;
 }
 
-/* .head span {
+.head span {
     background-color: black;
     color: white;
     padding: 5px;
-} */
+}
 
 .cards {
+
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 60px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+   
 
 }
 
 .card-1 {
+    
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 65.5%;
+  
 
-justify-content: space-between;
-    width: 930px;
-    height: 1180px;
 }
 
 .card-2 {
     display: flex;
     flex-direction: column;
-justify-content: space-between;
-    width: 465px;
-    height: 1150px;
+    justify-content: center;
+    gap: 30px;
+    width: 32.5%;
 }
 
 .box {
     background-color: white;
-    width: 930px;
-    height: 570px;
-    box-shadow: 0 2px 5px rgb(117, 116, 116) ;
+    width: 100%;
+    box-shadow: 0 2px 5px rgb(117, 116, 116);
 }
+
 .box img {
-    width: 930px;
+    width: 100%;
     height: 250px;
+
 }
 
-.sml-box{
-    background-color: white;
-    width: 465px;
-   height: 435px;
-   box-shadow: 0 2px 5px rgb(117, 116, 116) ;
+.box-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px;
+    font-size: 20px;
+}
+.btn{
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
-.sml-box-2{
+.btn button{
+    padding: 15px;
+    font-size: 20px;
     background-color: white;
-    width: 465px;
-    height: 205px;
-    box-shadow: 0 2px 5px rgb(117, 116, 116) ;
+    border: 1px solid #ccc !important;
+}
+.btn button:hover{
+    background-color: #c5c4c4;
+}
+
+.sml-box {
+    background-color: white;
+    width: 100%;
+  
+    box-shadow: 0 2px 5px rgb(117, 116, 116);
+}
+
+.sml-box img {
+    width: 100%;
+    height: 260px;
+    margin-top: -80px;
+
+}
+
+.sml-box-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    font-size: 20px;
     
 }
-.tag-title{
-    background-color: lightgray;
-    width: 465px;
-    height: 60px;
+
+.sml-box-2 {
+
+    background-color: white;
+    width: 100%;
+  margin-top: 5px;
+    box-shadow: 0 2px 5px rgb(117, 116, 116);
+  
+
 }
-.tags{
+
+.post {
     display: flex;
     align-items: center;
+    padding-left: 10px;
+    border-bottom: 2px solid #ebebebf1;
+
+}
+
+.post:hover {
+    background-color: #c5c4c4;
+}
+
+.post-title {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 25px;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 65px;
+
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.img img {
+    width: 50px;
+    height: 50px;
+}
+
+.post-info {
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 20px;
+    padding: 24px;
+
+}
+
+
+
+.tag-title {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 25px;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 65px;
+
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 20px;
 }
-.tags span{
+
+.tags span {
     color: black;
-    background-color: lightgrey;
-    font-size: 15px; 
+    background-color: #f1f1f1;
+    font-size: 15px;
 
-    padding: 2px ;
+    padding: 2px;
 
-} 
- .travel {
-   color: white !important; 
-   background-color: black !important;
-   font-size: 20px !important;
- 
 }
 
+.travel {
+    color: white !important;
+    background-color: black !important;
+    font-size: 20px !important;
 
-
-
-
-
-
-
-
-footer {
-    background-color: gray;
-
-    height: 180px;
+}
+.footer{ 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  color: white;
+    background-color: rgb(95, 95, 95);
+    padding: 30px;
+}
+a{
+    color: white;
+    
+}
+.btns button{
+    padding: 10px;
+    font-size: 20px;
+  background-color: black;
+  color: white;
+}
+.dis button{
+    background-color: black;
+    opacity: 0.4;
+}
+.btns button:hover{
+    background-color: #c5c4c4;
 }

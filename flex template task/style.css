@@ -12,6 +12,7 @@ body {
 
 
 .container {
+    background-color: yellow;
     width: 80%;
     margin: 0 auto;
 
