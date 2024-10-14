@@ -1,0 +1,130 @@
+@media (max-width: 576px) {
+
+.nav-btn-menu{
+   display: flex;
+}
+
+    .products{
+       display: flex;
+       flex-direction: column;
+    }
+    .cart{
+      display: flex;
+    }
+ .menu{
+   display: none;
+ }
+ .nav-list{
+   display: none;
+ }
+ .bath{
+    height: 800px;
+ }
+ .bath-img{
+width: 100%;
+ }
+ 
+    .bath-products{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+    }
+    .collections{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 20px;
+    }
+    .icons{
+       display: flex;
+       flex-wrap: wrap-reverse;
+    }
+ 
+    .follow-us-imgs{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .contacts-info{
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+    }
+ 
+ .sbmt a{
+     font-size: 15px;
+ }
+
+ .ftr-right{
+    display: none;
+ }
+
+
+ .icon i{
+   font-size:30px ;
+ }
+
+ /* .sale{
+   
+width: 350px;
+height: 450px;
+ }
+
+.sale-img img{
+   width: 100%;
+} */
+
+ .sale-info h1{
+   font-size: 80px;
+ }
+ .sale-info span{
+   font-size: 30px;
+ }
+
+ .back-img{
+   height: 400px;
+ }
+
+ .back-img-info h1 {
+   font-size: 100px ; 
+   text-align: center;       
+}
+
+.back-img-info p {
+   font-size: 20px;
+}
+
+.back-img-info a {
+   font-size:15px ;
+}
+.contacts-name{
+display: none;
+ }
+
+ .contacts-name-resp-1{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+ }
+ .contacts-name-resp-1 span{
+   text-align: center;
+ }
+ .contacts-name-resp-2{
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+ }
+ .sbmt{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+ }
+  .sbmt-btn{
+   margin-top: 30px;
+  }
+ }
