@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0px;
+  flex-wrap: nowrap;
+}
+.navbar .nav-right .nav-list {
+  font-size: 20px;
+}
+.navbar .nav-right .nav-list span {
+  padding-left: 20px;
+}
+.navbar .nav-right .nav-menu {
+  display: none;
+  font-size: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+}
+.hero .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+  flex-wrap: nowrap;
+  background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/2625193/images/young-rural-travellers-picnic2.jpg ");
+  background-position: center;
+}
+.hero .container .back-card {
+  width: 400px;
+  height: 450px;
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: nowrap;
+  margin: 100px 0;
+}
+.hero .container .back-card h1 {
+  font-size: 40px;
+}
+.hero .container .back-card p {
+  font-size: 20px;
+}
+.hero .container .back-card span {
+  font-size: 20px;
+}
+.hero .container .back-card button {
+  font-size: 20px;
+  padding: 15px 40px;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  background-color: #a79770;
+}
+
+.travel-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.travel-cards .travel-card {
+  background-color: aqua;
+  position: relative;
+  width: 370px;
+  height: 470px;
+}
+.travel-cards .travel-card .overlay-travel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.travel-cards .travel-card .travel-info {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  font-size: 18px;
+  z-index: 2;
+  color: white;
+  padding: 25px 0;
+  padding-right: 150px;
+  border-top: 3px solid rgba(255, 255, 255, 0.4);
+}
+.travel-cards .travel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .nav-right .nav-list {
+    display: none;
+  }
+  .nav-right .nav-menu {
+    display: flex !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .nav-right .nav-list {
+    display: none;
+  }
+  .nav-right .nav-menu {
+    display: flex !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .nav-right .nav-list {
+    display: none;
+  }
+  .nav-right .nav-menu {
+    display: flex !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}/*# sourceMappingURL=style.css.map */

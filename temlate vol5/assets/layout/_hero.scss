@@ -1,0 +1,42 @@
+.hero{
+    width: 100%;
+    position: relative;
+    .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include flex-mix(flex-start,center,column,0px,nowrap);
+        background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/2625193/images/young-rural-travellers-picnic2.jpg ");
+        background-position: center;
+    }
+    .container{
+    .back-card{
+        width: 400px;
+        height: 450px;
+        padding: 20px;
+        position: relative;
+        background-color: white;
+        @include flex-mix(flex-start,center,column,30px,nowrap);
+        margin: 100px 0;
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+        }
+        span{
+            font-size: 20px;
+        }
+        button{
+            font-size: 20px;
+            padding: 15px 40px;
+            border-radius: 40px;
+            border: none;
+            color: white;
+            background-color: #a79770;
+        }
+    }
+    }
+}

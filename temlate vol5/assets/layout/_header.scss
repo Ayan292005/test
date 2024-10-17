@@ -1,0 +1,19 @@
+.navbar{
+    @include flex-mix(center,space-between,row,0px,nowrap);
+    .nav-right{
+        .nav-list{
+            font-size: 20px;
+            span{
+          padding-left: 20px;
+            }
+        }
+        .nav-menu{
+            display: none;
+            font-size: 30px;
+        }
+    }
+}
+.container{
+    margin: 0 auto;
+    padding: 15px 0;
+}
