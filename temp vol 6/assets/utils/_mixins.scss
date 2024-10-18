@@ -1,0 +1,15 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    @mixin flex-mix ($align,$justify,$direction,$gap,$wrap){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    gap: $gap;
+    flex-wrap: $wrap;
+    }
+    
+    

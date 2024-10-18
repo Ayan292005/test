@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0px;
+  flex-wrap: nowrap;
+}
+header .navbar .nav-left {
+  display: flex;
+  gap: 25px;
+  color: white;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 15px 0;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+}
+.hero .back-img {
+  z-index: 1;
+}
+.hero .back-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.hero .back-img .back-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero .back-img .back-info h1 {
+  color: white;
+  font-size: 48px;
+}
+.hero .back-img .back-info h6 {
+  color: white;
+  font-size: 18px;
+}
+.hero .back-img .back-info button {
+  padding: 18px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #d73e4d;
+}
+@keyframes red-btn {}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}/*# sourceMappingURL=style.css.map */

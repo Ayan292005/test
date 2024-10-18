@@ -1,0 +1,43 @@
+.hero{
+    width: 100%;
+    position: relative;
+    .back-img{
+        z-index: 1;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    .back-info{
+        @include flex-mix(center,center,column,20px,nowrap);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1{
+            color: white;
+            font-size: 48px;
+        }
+        h6{
+            color: white;
+            font-size: 18px;
+        }
+        button{
+            padding: 18px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid #d73e4d;
+            &:hover{
+
+            }
+        }
+    }
+    }
+}
+@keyframes red-btn{
+    from{
+        
+    }
+    to{
+
+}
+}
