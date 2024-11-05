@@ -10,7 +10,6 @@ let button2=document.querySelector(".copyBtn")
 
 let count=0
 
-let CurrentColor;
 
 function randomColor() {
     let r=Math.floor(Math.random()*256)
@@ -33,8 +32,8 @@ button.addEventListener("click", function () {
 
 })
 button2.addEventListener ("click", function () {
-    navigator.clipboard.writeText( CurrentColor);
+    navigator.clipboard.writeText(input.value);
   
-    alert("Copied the text: " +  CurrentColor);
+    alert("Copied the text: " + input.value);
   
 })
