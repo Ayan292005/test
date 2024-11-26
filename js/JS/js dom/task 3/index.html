@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 40px;
+        }
+
+        h1{
+            font-size: 60px;
+        }
+
+        .form{
+            padding-bottom: 30px;
+        }
+
+        .input{
+            font-size: 30px;
+        }
+        .btn{
+            font-size: 30px;
+        }
+
+        .ToDo{
+           display: none;
+           justify-content: space-between;
+           align-items: center;
+        }
+        .text{
+            font-size: 25px;
+        }
+
+        .ck-box{
+            width: 30px;
+            height: 30px;
+        }
+        .btn-2{
+            font-size: 21px;
+        }
+    </style>
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="box">
+        <h1>To Do List</h1>
+        <form class="form">
+            <input type="text" class="input">
+            <button class="btn">+</button>
+        </form>
+    </div>
+    
+</body>
+</html>
