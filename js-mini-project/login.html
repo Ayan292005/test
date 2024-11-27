@@ -16,34 +16,24 @@
 </head>
 
 <body>
-    <header>
-        <nav class="mb-3 p-2 d-flex align-items-center justify-content-between gap-2">
-            <div class="nav-left">
-                <button type="button" class="btn btn-danger"> <i class="fa-regular fa-heart"
-                        style="font-size:20px;color:white"></i></button>
-                <button type="button" class="btn btn-success"><i class="fa-solid fa-cart-shopping"
-                        style="font-size:20px;color:white"></i></button>
+    <div class="container">
+        <h1 class="text-center my-5">Login Form</h1>
+        <form class="login-form my-5">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <div class="nav-right">
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
             </div>
-
-
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" id="search" placeholder="Search..." aria-label="Search">
-            </form>
-        </div>
-        <div class="container">
-            <div class="row">
-
-            </div>
-        </div>
-    </main>
-
-    <script src="./JS/index.js"></script>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="./index.html" class="btn btn-dark">Back</a>
+            <div id="emailHelp" class="form-text my-3">Create an account <a href="./register.html">Register</a></div>
+        </form>
+    </div>
+    <script src="./JS/login.js"></script>
 </body>
 
 </html>
