@@ -5,7 +5,7 @@ let products = []
 let myURL="http://localhost:4000"
 
 function GetLocalId() {
-    let userId = JSON.parse(localStorage.getItem("userInfo"))
+    let userId = JSON.parse(localStorage.getItem("userId"))
     if (userId) {
         GetDataById(`${myURL}/users`, userId)
             .then(res => {
@@ -19,7 +19,7 @@ function GetLocalId() {
 
                 let logout = document.querySelector(".logout")
                 logout.addEventListener("click", () => {
-                    localStorage.removeItem("userInfo")
+                    localStorage.removeItem("userId")
                     GetLocalId()
                 })
             })
@@ -47,9 +47,9 @@ function displayProducts(products) {
                         <p class="card-text"><strong>Model:</strong> ${product.model}</p>
                         <p class="card-text"><strong>Price:</strong> ${product.price}$</p>
                         <div class="d-flex justify-content-end" style="gap:10px"> 
+                        <a href="details.html?id=${product.id}" class="btn btn-info">Details</a>
                         <button type="button" class="btn btn-danger"> <i class="fa-regular fa-heart" style="font-size:18px;color:white"></i></button>
                         <button type="button" class="btn btn-success"><i class="fa-solid fa-cart-shopping" style="font-size:18px;color:white"></i></button>
-                       
                         </div>
                        
                     </div>

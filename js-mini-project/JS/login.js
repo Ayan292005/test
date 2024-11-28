@@ -13,7 +13,7 @@ loginForm.addEventListener("submit",(e)=>{
         let wrongEmail= users.find(user=> user.email!=email.value && user.password==password.value)
         let allWrong= users.find(user=> user.email!=email.value || user.password!=password.value)
        if(findedUser){
-          localStorage.setItem("userInfo",JSON.stringify(findedUser.id))
+          localStorage.setItem("userId",JSON.stringify(findedUser.id))
           window.location.href="index.html"
        }else if(wrongPassword){
           alert("password is invalid")
