@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+            background-color: rgb(211, 211, 211,0.5);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            background-color: white;
+            padding: 40px 0px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        input{
+            padding: 5px;
+        }
+        .btn{
+            padding: 8px 130px;
+            margin-bottom: 10px;
+            background-color: rgb(91, 91, 239);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(91, 91, 239);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div style="border-radius: 50%; height: 45px;width: 45px; background-color: blueviolet;"></div>
+        <h1>Company Register</h1>
+        <form>
+            <div class="input">
+                <label for="name" class="form-label">Company Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="input">
+                <label for="location" class="form-label">Location</label>
+                <input type="text"  id="location" required>
+            </div>
+            <div class="input">
+                <label for="industry" class="form-label">Industry</label>
+                <input type="text" id="industry">
+            </div>
+            <div class="input">
+                <label for="website" class="form-label">Website</label>
+                <input type="text" id="website">
+            </div>
+            <button type="submit" class="btn">REGISTER</button> 
+        </form>
+        <a href="./register.html" style="margin-bottom: 10px;">USER REGISTER PAGE</a>
+        <a href="./companyLog.html">ALREADY HAVE AN ACCOUNT? LOGIN</a>
+    </div>
+</body>
+</html>

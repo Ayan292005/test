@@ -1,0 +1,58 @@
+{
+    "users": [
+        {
+            "fullName": "Ayan Axundova",
+            "email": "ayan.axundova@gmail.com",
+            "password": 123456,
+            "isAdmin": false,
+            "id": 1
+        },
+        {
+            "fullName": "aytac",
+            "surname": "guliyeva",
+            "email": "aytacgul@gmail.com",
+            "password": 1234567,
+            "isAdmin": false,
+            "id": 2
+        },
+        {
+            "fullName": "Hikmat",
+            "surname": "Hasanzada",
+            "email": "hikohiko@gmail.com",
+            "password": 54321,
+            "isAdmin": false,
+            "id": 3
+        },
+        {
+            "fullName": "wasd",
+            "surname": "wasd",
+            "email": "wasd@gmail.com",
+            "password": 123,
+            "isAdmin": false,
+            "id": 4
+        }
+    ],
+    "companies": [
+        {
+            "name": "Company1",
+            "location": "Baku",
+            "industry": "gaming",
+            "website": "hello.com",
+            "id": 1
+        },
+        {
+            "name": "Company1",
+            "location": "Baku",
+            "industry": "gaming",
+            "website": "hello.com",
+            "id": 2
+        },
+        {
+            "name": "Company1",
+            "location": "Baku",
+            "industry": "gaming",
+            "website": "hello.com",
+            "id": 3
+        }
+    ]
+}

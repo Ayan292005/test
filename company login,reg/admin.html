@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+    integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .left-part {
+            width: 15%;
+            background-color: rgb(48, 74, 130);
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .right-part {
+            width: 85%;
+            height: 100vh;
+            margin-left: 288px;
+            padding: 15px;
+        }
+
+        .fa-solid {
+            color: white;
+        }
+
+        .fa-paw {
+            border: 1px solid white;
+            padding: 5px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+
+        .fa-bars {
+            color: black;
+            font-size: 25px;
+        }
+
+        .welcome {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .switch{
+            cursor: pointer;
+        }
+        .switch:after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.2em solid;
+            border-right: 0.2em solid transparent;
+            border-bottom: 0;
+            border-left: 0.2em solid transparent;
+        }
+
+        .admin-info {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .staff-add {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .add-btn {
+            color: white;
+            background-color: rgb(96, 215, 181);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .table-users{
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-part">
+        <div class="sidebar-categ">
+            <i class="fa-solid fa-paw"></i>
+            <span style="color: white; font-size: 25px;">Madani</span>
+        </div>
+        <div class="welcome">
+            <div
+                style="border-radius: 50%; height: 55px;width: 55px; background-color: rgb(0, 0, 0); border: 4px solid white;">
+            </div>
+            <p style="color: white;">Welcome, <br> Super Admin</p>
+        </div>
+        <h2 style="color: white;">General</h2>
+        <div class="sidebar-categ">
+            <i class="fa-solid fa-house"></i>
+            <span style="color: white;">Home</span>
+        </div>
+        <div class="sidebar-categ">
+            <i class="fa-solid fa-user"></i>
+            <span class="switch users" style="color: white;">Users</span>
+        </div>
+        <div class="sidebar-categ">
+            <i class="fa-solid fa-shuffle"></i>
+            <span class="switch" style="color: white;">Companies</span>
+        </div>
+        <div class="sidebar-categ">
+            <i class="fa-solid fa-gears"></i>
+            <span class="switch" style="color: white;">Equipments</span>
+        </div>
+    </div>
+    <div class="right-part">
+        <div class="header">
+            <i class="fa-solid fa-bars"></i>
+            <div class="admin-info">
+                <div style="border-radius: 50%; height: 35px;width: 35px; background-color: rgb(0, 0, 0);"></div>
+                <p style="padding-top: 12px;">Super Admin</p>
+            </div>
+        </div>
+        <div class="choose-info">
+            <div class="staff-add">
+                <p style="font-size: 30px;">Project Staff</p>
+                <div style="display: flex; gap: 10px; align-items:center;">
+                    <button class="add-btn">Add New Staff</button>
+                    <input type="search" placeholder="Search for" style="border: none;padding: 10px;">
+                    <p style="margin-top: 13px;">Go!</p>
+                </div>
+            </div>
+            <div class="members">
+                <p style="font-size: 25px;">All Users Members</p>
+                <!-- <table class="table">
+                   <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">FullName</th>
+                        <th scope="col">Email address</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">#Edit</th>
+                    </tr>
+                </thead> 
+                </table> -->
+                <table class="table table-users">
+                    <!-- <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">FullName</th>
+                            <th scope="col">Email address</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">#Edit</th>
+                        </tr>
+                    </thead> -->
+                    <!-- <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-info" style="color: white;">Edit</button>
+                                <button class="btn btn-danger" style="color: white;">Delete</button>
+                            </td>
+                    </tbody> -->
+                </table>
+                <table class="table table-companies">
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/admin.js"></script>
+</body>
+
+</html>
