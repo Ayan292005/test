@@ -24,7 +24,7 @@ function displayUsers(users) {
                    
                     <tbody>
                         <tr>
-                            <th scope="row"></th>
+                            <th scope="row">${user.id}</th>
                             <td>${user.fullName}</td>
                             <td>${user.email}</td>
                             <td>${user.password}</td>
@@ -61,9 +61,7 @@ async function getData() {
 }
 getData()
 
-UsersClick.addEventListener("click",()=>{
-table.style.opacity="1"
-})
+
 
 
 
@@ -89,7 +87,7 @@ function displayCompanies(companies) {
                    
                     <tbody>
                         <tr>
-                            <th scope="row"></th>
+                            <th scope="row">${company.id}</th>
                             <td>${company.name}</td>
                             <td>${company.location}</td>
                             <td>${company.industry}</td>

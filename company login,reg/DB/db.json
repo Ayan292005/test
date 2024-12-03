@@ -41,15 +41,15 @@
             "id": 1
         },
         {
-            "name": "Company1",
-            "location": "Baku",
+            "name": "Company2",
+            "location": "Moscow",
             "industry": "gaming",
             "website": "hello.com",
             "id": 2
         },
         {
-            "name": "Company1",
-            "location": "Baku",
+            "name": "Company3",
+            "location": "Berlin",
             "industry": "gaming",
             "website": "hello.com",
             "id": 3
